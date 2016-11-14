@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
+
+<head>
+    <!-- The head tag includes important information about the page -->
+    <meta charset="UTF-8">
+    <!-- This line defines something called "character encoding"
+    This will allow the browser to display certain characters (such as non-Roman letters) correctly.
+    You should include this line in the head of all of your webpages. -->
+    <title>Kuei's Notes</title>
+    <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <link rel="stylesheet" type=text/css href="style.css">
+    <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+</head>
+
+<body>
+    <!-- The body tag is where the "flesh" of your HTML goes -->
+    <!-- Write your HTML here -->
+    <div>
+        <div class="lesson">
+            <h1>Lesson 1: Basics of the Web and HTML</h1>
+            <div class="concept">
+                <h2>The World Wide Web</h2>
+                <div class="description">
+                    <p>World Wide Web is a collection of <b>HTML</b> documents.</p>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>Components of the Web</h2>
+                <div class="description">
+                    <img src="img/components.png" alt="Components of the Web">
+                    <ul>
+                        <li><b>HTTP(Hypertext Transfer Protocol)</b> - the main protocol of the web</li>
+                        <li><b>Servers</b> - computers that host the files that make up the web</li>
+                        <li><b>Internet</b> - the world's largerst computer network</li>
+                        <li><b>Browsers</b> - a program that runs on your computer to display files found on the web</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>HTML</h2>
+                <div class="description">
+                    <p>HTML stands for <em>HyperText Markup Language</em>, which is the main type of document on the web.</p>
+                    <p>HTML is made up of </p>
+                    <ul>
+                        <li>text content <em>what you see</em></li>
+                        <li>markup <em>what it looks like</em></li>
+                        <li>references to other documents <em>e.g. images + videos</em></li>
+                        <li>links to pages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>HTML Elements</h2>
+                <div class="description">
+                    <ul>
+                        <li>
+                            <p>HTML Markup</p>
+                            <img src="img/markup.png" alt="TML Markup">
+                        </li>
+                        <li>
+                            <p>Bold Tag</p>
+                            <p>e.g. HTML is <b>reasonably straightforward</b></p>
+                        </li>
+                        <li>
+                            <p>Italics</p>
+                            <p>e.g. HTML is <b><em>reasonably straightforward</em></b></p>
+                        </li>
+                        <li>
+                            <p>Making Links</p>
+                            <p><img src="img/attribute.png" alt="Making Links"></p>
+                            <p>e.g. This website is <a href="http://udacity.com">my favorite</a></p>
+                        </li>
+                        <li>
+                            <p>Adding images</p>
+                            <p><img src="img/image.png" alt="Adding images"></p>
+                        </li>
+                        <li>
+                            <p>Whitespace</p>
+                            <p><img src="img/whitespace.png" alt="Whitespace"></p>
+                            <p>e.g. Hello everyone!
+                                <br> We're using two lines now!</p>
+                        </li>
+                        <li>
+                            <p>Paragraph Tag</p>
+                            <p>e.g.</p>
+                            <p>Hello everyone!</p>
+                            <p>We're using two lines now!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>Inline vs Block</h2>
+                <div class="description">
+                    <p><img src="img/inlinevsblock.png" alt="Inline vs Block"></p>
+                    <ul>
+                        <li>
+                            <p>Span and Div</p>
+                            <p><img src="img/spananddiv.png" alt="Span and Div"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>Document Structure</h2>
+                <div class="description">
+                    <p><img src="img/document.png" alt="Document Structure"></p>
+                    <p><img src="img/document2.png" alt="Document Structure 2"></p>
+                    <ul>
+                        <li><b>&lt;!DOCTYPE html&gt;</b> defines the type of the document so the browser will render it correctly.</li>
+                        <li><b>&lt;html&gt;</b> opens our document.</li>
+                        <li><b>&lt;head&gt;</b> defines metadata for our web page.</li>
+                        <li><b>&lt;title&gt;</b> is closed on the same line it was opened which we usually do if the content of a tag is short.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <h1>Lesson 2: Creating a Structured Document</h1>
+            <div class="concept">
+                <h2>Google Chrome Developer Tools</h2>
+                <div class="description">
+                    <p>Otherwise known as "Dev Tools" in the programming community, Dev Tools gives developers the added power to dive under the "hood" of what the browser is doing whenever the browser renders a page. Please note that any HTML changes we make in Dev Tools will not get saved to our actual files.</p>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>HTML-CSS-DOM</h2>
+                <div class="description">
+                    <ul>
+                        <li>
+                            <b>Focus Checkpoint</b>
+                            <ul>
+                                <li>HTML and CSS are both "languages"</li>
+                                <li>HTML controls the "structure" of a web page</li>
+                                <li>CSS controls the "style" of a page (how it looks).</li>
+                                <li>When programmers talk about the "DOM" (Document Object Model) they are talking about the tree-like structure of a page.</li>
+                            </ul>
+                        </li>
+                        <li><b>HTML</b> - HyperText Markup Language - the standard markup language used to create web pages.</li>
+                        <li><b>CSS</b> - Cascading Style Sheets - style sheet language used for describing the look and formatting of a document written in a markup language.</li>
+                        <li><b>DOM</b> - Document Object Model - a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <h1>Lesson 3: Adding CSS Style to HTML Structure</h1>
+            <div class="concept">
+                <h2>Understanding CSS</h2>
+                <div class="description">
+                    <h3>Search and Replace</h3>
+                    <p>You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.</p>
+                    <h3>Order Matters</h3>
+                    <p>It also matters where you define the rules and in what order they are applied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:</p>
+                    <ul>
+                        <li>the default style of a browser (different browsers have slightly different styles)</li>
+                        <li>stylesheet in a separate file (this is what you will be mostly using)</li>
+                        <li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+                        <li>inline style in an element (this can also be done but should be avoided)</li>
+                    </ul>
+                    <h3>Specifics Matter</h3>
+                    <p>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.</p>
+                </div>
+            </div>
+            <div class="concept">
+                <h2>CSS Summary and Reference</h2>
+                <div class="description">
+                    <h3>What is CSS?</h3>
+                    <p>CSS is code written to control the "style" of HTML elements.</p>
+                    <h3>CSS Vocabulary</h3>
+                    <ul>
+                        <li><b>CSS</b>: Cascading Style Sheets.</li>
+                        <li>
+                            <b>Style</b>: This word can refer to many things and so it can be confusing. It can refer to:
+                            <ul>
+                                <li>The HTML element. For example: <code>&lt;style&gt;div {color:blue}&lt;/style&gt;</code></li>
+                                <li>The HTML attribute. For example: <code>&lt;div style="color : blue"&gt;this text would be blue&lt;/div&gt;</code></li>
+                                <li>The general look of a web page. For example: "<em>I like that site's style.</em>"</li>
+                                <li>A verb. For example: "<em>I'm making progress on my page. The structure is all done but now I have to style it.</em>"</li>
+                            </ul>
+                        </li>
+                        <li><b>Rule</b>: a line of CSS code describing the value that a certain attribute should take.</li>
+                        <li><b>Property</b>: The property you want to change.</li>
+                        <li><b>Value</b>: The value that you want to assign to the attribute.</li>
+                        <li><b>Selector</b>: The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.</li>
+                        <li><b>Class</b>: A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1"</li>
+                        <li><b>ID</b>: ID's are unique identifiers that uniquely identifies an element in HTML.</li>
+                    </ul>
+                    <h3>How do I include CSS Styling in my web page?</h3>
+                    <p>There are three ways you can do this.</p>
+                    <h4>Method 1: write CSS in the &lt;head&gt; of your HTML</h4>
+                    <p>This method is good for very small projects</p>
+                    <h4>Method 2: Link your HTML to a separate CSS file</h4>
+                    <p>This adds another step, but it lets you stay more organized when working on larger projects. </p>
+                    <h4>Method 3: Write your style inline with your HTML</h4>
+                    <p>This is generally a very bad idea because it leads to lots of repeated code. But you may see code that uses this method so it's good to be familiar with it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
