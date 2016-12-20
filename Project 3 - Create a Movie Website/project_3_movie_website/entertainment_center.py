@@ -10,11 +10,6 @@
 import media
 import fresh_tomatoes
 
-your_name = media.Movie("Your Name",
-                        "Two high school kids who've never met - city boy Taki and country girl Mitsuha - are united through their dreams.",
-                        "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-                        "https://www.youtube.com/watch?v=hRfHcp2GjVI")
-
 interstellar = media.Movie("Interstellar",
                            "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
                            "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
@@ -40,5 +35,12 @@ bicentennial_man = media.Movie("Bicentennial Man",
                                "https://upload.wikimedia.org/wikipedia/en/f/fc/Bicentennial_man_film_poster.jpg",
                                "https://www.youtube.com/watch?v=nZ7HxlhVDyM")
 
-movies = [your_name, interstellar, her, the_last_unicorn, a_i_artificial_intelligence, bicentennial_man]
+your_name = media.Movie("Your Name",
+                        "Two high school kids who've never met - city boy Taki and country girl Mitsuha - are united through their dreams.",
+                        "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
+                        "https://www.youtube.com/watch?v=hRfHcp2GjVI")
+
+movies = [interstellar, her, the_last_unicorn, a_i_artificial_intelligence, bicentennial_man, your_name]
+# Uses list of movie instances as input to generate an HTML file
+# and open it in the browser.
 fresh_tomatoes.open_movies_page(movies)

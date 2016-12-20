@@ -13,7 +13,7 @@ class Movie():
     valid_ratings = ["G", "PG", "PG-13", "R"]
 
     def __init__(self, movie_title, movie_storyline, poster_image, trailer):
-        # initialize instance of class Movie
+        ''' initialize instance of class Movie '''
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
